@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whats clone</title>
+    <link rel="stylesheet" href="whatapp.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="chatInteration">
+
+
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+
+
+        <div class="profile1">
+            <img class="profile" src="profile1.png" alt="image">
+        </div>
+
+        <div class="name">Friend (JIT)
+
+        </div>
+
+        <span class="material-symbols-outlined">
+            videocam
+        </span>
+
+        <span class="material-symbols-outlined">
+            call
+        </span>
+
+        <span class="material-symbols-outlined">
+            more_vert
+        </span>
+    </div>
+
+    <div class="chatInput">
+        <div class="emoji">
+            <span class="material-symbols-outlined">
+                mood
+            </span>
+        </div>
+        <div class="message">
+
+
+            <!-- <input type="text" name="t1" placeholder="Message"> -->
+            <textarea name="t1" id="text" placeholder="Message" oninput="toggle()"></textarea>
+
+        </div>
+
+        <div id="mic">
+
+            <span class="material-symbols-outlined mic_send">
+                mic
+
+            </span>
+
+        </div>
+
+    </div>
+    <!-- <div id="send">
+        <span class="material-symbols-outlined" class="send_">
+            send
+            </span> -->
+<script>
+    function toggle() {
+        let text = document.getElementById("text");
+        const el = document.querySelector('.material-symbols-outlined.mic_send');
+        if (text.value === "") {
+            el.innerHTML = "mic";
+        } else {
+            el.innerHTML = "send";
+        }
+    }
+</script>
+</body>
+</div>
+
+
+</html>
